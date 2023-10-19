@@ -1,0 +1,260 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.header{
+    height: 13vh;
+    background-color: rgb(235, 166, 19);
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 80px;
+}
+.telephone{
+    position: absolute;
+    right: 5%;
+}
+.body{
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(taxi.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.title h1{
+    color: #fff;
+    font-size: 40px;
+}
+.btn1{
+    position: absolute;
+    left: 15%;
+    margin-top: 20px;
+ }
+ .btn1 a{
+     text-decoration: none;
+     color: #fff;
+     font-family: sans-serif;
+     font-size: 25px;
+     border: 1px solid rgb(235, 166, 19);
+     border-radius: 50px;
+     padding: 10px 30px;
+     background-color: rgb(235, 166, 19);
+     transition: 0.5s ease;
+ }
+ .btn1 a:hover{
+     background-color: rgb(107, 79, 0);
+     border: 1px solid rgb(107, 79, 0);
+     color: rgb(201, 191, 191);
+ }
+ .footer{
+     height: 12vh;
+     background-color: rgb(235, 166, 19);
+ }
+ /*second page*/
+ .h1 h2{
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(235, 166, 19);
+    font-family: sans-serif;
+    font-size: 30px;
+    animation: animate 2.5s linear infinite;
+}
+@keyframes animate{
+  0%{
+      color: rgb(235, 166, 19);
+  }
+  25%{
+      color: rgb(58, 42, 8);
+  }
+  50%{
+    color: rgb(235, 166, 19);
+  }
+  75%{
+    color: rgb(58, 42, 8);
+}
+}
+ .gallery{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 50px;
+}
+.pic{
+
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: 0px solid #000;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 30px 0px rgb(104, 72, 4);
+    transition: transform 0.5s ease;
+}
+.pic:hover{
+    transform: translateY(-10px);
+}
+
+.pic img{
+    width: 300px;
+}
+.rating .fa{
+    color: #555;
+}
+.btn{
+    margin-bottom: 10px;
+    padding: 20px 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-size: 15px;
+    border: 1px solid rgb(235, 166, 19);
+    padding: 10px 30px; 
+    background-color: rgb(235, 166, 19);
+    transition: 0.2s ease;
+}
+.btn a:hover{
+    color: #fff;
+    background-color: rgb(107, 79, 0);
+    border: 1px solid rgb(107, 79, 0);
+}
+.pic img{
+    height: 230px;
+    transition: 0.8s ease;
+    cursor: pointer;   
+}
+
+.pic p{
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.image{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(taxi1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footer1{
+    height: 45vh;
+    background-color: #000;
+    color: rgb(235, 166, 19);
+    font-family: sans-serif;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+.row{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer1 .col-1, .footer1 .col-2, .footer1 .col-3{
+    flex-basis: 30%;
+  }
+  .col-2 li{
+      list-style-type: none;
+  }
+  .col-2 li a{
+       text-decoration: none;
+       color: rgb(107, 79, 0);
+       line-height: 30px;
+       margin-top: 10px;
+  }
+  .col-2 li a:hover{
+      color: #fff;
+  }
+  .col-1 p{
+      margin-top: 10px;
+      line-height: 20px;
+  }
+  .icons i{
+    font-size: 25px;
+    padding: 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(235, 166, 19);
+    transition: 0.5s ease;
+}
+.icons a:hover{
+    color: #fff;
+}
+
+
+ /*import from places css*/
+ @media(max-width:900px){
+    .pic img{
+        height: 200px;
+    }
+}
+@media(max-width:807px){
+     .pic img{
+      height: 170px;
+  }
+}
+@media(max-width: 570px){
+    .pic img{
+        height: 250px;
+    }  
+    .pic img{
+        width: 250px;
+    }
+}
+@media(max-width: 465px){
+    .pic img{
+      height: 170px;
+  }
+  .footer1 .col-1, .footer1 .col-2, .footer1 .col-3{
+    flex-basis: 100%;
+    margin-bottom: 0px;
+  }
+  .footer1{
+      height: 60vh;
+  }
+}
+@media(max-width: 628px){
+    .pic img{
+        height: 230px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .btn1 a{
+        font-size: 20px;
+    }
+}
+@media(max-width: 465px){
+    .title h1{
+        font-size: 25px;
+    }
+    .btn1 a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 411px){
+  .pic img{
+      height: 170px;
+  }
+}
+@media(max-width: 317px){
+   .pic img{
+       height: 80px;
+       width: 150px;
+   }
+   .btn a{
+       font-size: 15px;
+   }
+}

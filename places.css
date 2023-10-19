@@ -1,0 +1,257 @@
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .head{
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(1.png);
+      border-bottom: 0px solid #000;
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .logo a img{
+    height: 100px;
+    margin-top: 20px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.title{
+  margin-top: 100px;
+}
+.title li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 30px;
+    transition: 0.5s ease;
+}
+.title li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.title li a:hover{
+    color: #fff;
+    background: none;
+}
+.title h1{
+    font-size: 35px;
+    color: #fff;
+    font-family: sans-serif;
+}
+.title p{
+    color: #fff;
+}
+.h1 h2{
+    text-align: center;
+    margin-top: 60px;
+    color: #555;
+}
+.h1 h2::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #555;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    animation: animate 4s linear infinite;
+}
+.youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+}
+.youtube iframe{
+    height: 500px;
+    width: 800px;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+  .gallery{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pic{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: 0px solid #000;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+    transition: transform 0.5s ease;
+}
+.pic:hover{
+    transform: translateY(-10px);
+}
+.btn{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-size: 15px;
+    border: 1px solid rgb(65, 101, 112);
+    padding: 10px 30px; 
+    background-color: rgb(65, 101, 112);
+}
+.btn a:hover{
+    color: #fff;
+    background-color: rgb(9, 83, 107);
+    border: 1px solid rgb(9, 83, 107);
+}
+.pic img{
+    height: 230px;
+    transition: 0.8s ease;
+    cursor: pointer;   
+}
+
+.pic p{
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+  .footer{
+    background: linear-gradient(#fff,#3a3a3a);
+      padding: 60px 0 20px;
+      overflow: hidden;
+      font-family: sans-serif;
+      color: #555;
+  }
+  .row{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .footer .col-1, .footer .col-2, .footer .col-3{
+    flex-basis: 30%;
+  }
+  .col-2 li{
+      list-style-type: none;
+  }
+  .col-2 li a{
+       text-decoration: none;
+       color: #555;
+  }
+  .col-2 li a:hover{
+      color: #fff;
+  }
+  .icons i{
+      font-size: 25px;
+      padding: 10px;
+  }
+  .icons a{
+      text-decoration: none;
+      color: #555;
+      transition: 0.5s ease;
+  }
+  .icons a:hover{
+      color: #fff;
+  }
+
+  @media(max-width:900px){
+      .pic img{
+          height: 200px;
+      }
+      .youtube iframe{
+        height: 400px;
+        width: 700px;
+    }
+  }
+  @media(max-width:807px){
+
+       .title h1{
+           font-size: 30px;
+       }
+       .png{
+           height: 100px;
+       }
+       .pic img{
+        height: 170px;
+    }
+    .youtube iframe{
+        height: 320px;
+        width: 550px;
+    }
+  }
+  @media(max-width: 570px){
+      .pic img{
+          height: 250px;
+      }  
+      .png{
+          height: 100px;
+      }
+      .row{
+          text-align: center;
+      } 
+      .youtube iframe{
+        height: 100px;
+        width: 550px;
+
+    }
+  }
+  @media(max-width: 465px){
+    .footer .col-1, .footer .col-2, .footer .col-3{
+        flex-basis: 100%;
+        margin-top: 30px;
+      }
+      .head{
+          overflow: hidden;
+      }
+      .pic{
+          margin-left: 0;
+          margin-bottom: 30px;
+      }
+      .pic img{
+        height: 170px;
+    }
+    .title h1{
+        font-size: 20px;
+        color: #fff;
+        font-family: sans-serif;
+    }
+  }
+  @media(max-width: 628px){
+      .pic img{
+          height: 230px;
+      }
+      .youtube iframe{
+        height: 250px;
+        width: 450px;
+    }
+  }
+  
+  @media(max-width: 414px){
+    .pic img{
+        height: 170px;
+    }
+    .col-3 h3{
+        color: rgb(180, 180, 180);
+    }
+    .youtube iframe{
+        height: 170px;
+        width: 350px;
+    }
+  }

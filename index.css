@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+*{
+    font-family: sans-serif;
+    overflow: hidden;
+}
+#videoBG{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    background: rgba(0,0,0,0.7);
+    height: 100vh;
+}
+
+.title{
+    text-align: center;
+    margin-top: 250px;
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+}
+.logo a img{
+     height: 100px;
+     margin-top: 20px;
+}
+.logo{
+   display: flex;
+   justify-content: center;
+   flex-basis: 200px;
+}
+.flex{
+   display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.btn1{
+    padding: 7px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    background: white;
+    transition: 0.5s ease;
+    
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    transition: 0.5s ease;
+}
+.btn1 a:hover{
+    background: white;
+    color: black;
+}
+.btn a:hover{
+    background: none;
+    color: white;
+}
+.line{
+    border: 0.1px solid #fff;
+    padding: 0 50px;
+    margin-top: 70px;
+    width: 700px;
+}
+center p{
+    color: #fff;
+    margin-top: 10px;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG{
+        width: auto;
+        height: 100%;
+    }
+    .overlay{
+        overflow: hidden;
+    }
+}
+@media (max-width:1010px){
+   
+    .title h1{
+        font-size: 40px;
+    }
+    #videoBG{
+        src: url(b.mp4);
+    }
+    .line{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 700px){
+    .line{
+        width: 400px;
+    }
+}
+@media (max-width: 575px){
+     .title h1{
+         font-size: 30px;
+     } 
+     .btn1 a{
+       padding: 5px 15px;
+       font-size: 20px;
+     }
+     .btn a{
+        padding: 5px 15px;
+        font-size: 20px;
+      }
+}
+@media (max-width: 400px){
+    .line{
+        width: 200px;
+    }
+}
+

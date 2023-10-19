@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(a.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height: 100px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+p{
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+
+@media (max-width: 600px){
+    .logo img{
+        height: 70px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
