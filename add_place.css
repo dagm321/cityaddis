@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #1a1a1d;
+    font-family: sans-serif;
+}
+.header  {
+    width: 99.5vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+.header .item {
+    width: 400px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .item1 {
+    width: 400px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .item1 img {
+    width: 280px;
+    height: 100px;
+    color: white;
+}
+.item a {
+    text-decoration: none;
+    color: white;
+}
+.item a:hover {
+    color: rgb(151, 142, 142);
+    transition: 0.6s ease;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.body {
+    height: 300px;
+    width: 500px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+}
+.body {
+    
+}
+.body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.body form button {
+    margin-top: 10px;
+    background-color: #950740;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.body form button:hover {
+    background-color: #ae0f0f;
+    transition: 0.6s ease;
+}
+.body form input:focus {
+    border: none;
+    outline: none;
+}
+.body form input {
+    margin-top: 10px;
+    height: 22px;
+
+}
+.body form input::placeholder {
+    text-indent: 30px;
+}
+.body form input[type="text"] {
+    text-indent: 30px;
+}
+.body h1 {
+    color: white;
+    text-align: center;
+}
